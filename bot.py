@@ -6,6 +6,8 @@ from openai import OpenAI
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+print("BOT_TOKEN:", BOT_TOKEN)
+
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 SYSTEM_PROMPT = """
